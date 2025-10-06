@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 import QuizPage from './pages/QuizPage'
 import ResultsPage from './pages/ResultsPage'
 import { decodeHtml, shuffle } from './utils'
+import bundledData from './questions.json'
 
 const API_URL = 'https://opentdb.com/api.php'
 
@@ -24,20 +25,15 @@ function App() {
 
   function loadLocal() {
     setLoading(true)
-    fetch('/src/questions.json')
-      .then((r) => {
-        if (!r.ok) throw new Error('Failed to load questions')
-        return r.json()
-      })
-      .then((data) => {
-        setQuestions(data.questions || [])
-        setLoading(false)
-      })
-      .catch((err) => {
-        console.error(err)
-        setError(err.message)
-        setLoading(false)
-      })
+    try {
+      const data = bundledData
+      setQuestions(data.questions || [])
+      setLoading(false)
+    } catch (err) {
+      console.error(err)
+      setError('Failed to load bundled questions')
+      setLoading(false)
+    }
   }
 
   async function loadFromApi() {
