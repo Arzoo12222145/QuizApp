@@ -1,0 +1,46 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "options": ["Paris", "Madrid", "Berlin", "Rome"],
+      "answer": "Paris"
+    },
+    {
+      "id": 2,
+      "question": "Which language runs in a web browser?",
+      "options": ["Python", "C#", "JavaScript", "Java"],
+      "answer": "JavaScript"
+    },
+    {
+      "id": 3,
+      "question": "What does CSS stand for?",
+      "options": ["Cascading Style Sheets", "Central Style Syntax", "Computer Style Sheet", "Creative Style System"],
+      "answer": "Cascading Style Sheets"
+    },
+    {
+      "id": 4,
+      "question": "Which company developed the React library?",
+      "options": ["Google", "Facebook (Meta)", "Microsoft", "Amazon"],
+      "answer": "Facebook (Meta)"
+    },
+    {
+      "id": 5,
+      "question": "HTML is used to structure content on the web. What does HTML stand for?",
+      "options": ["HyperText Markup Language", "HighText Machine Language", "Hyperloop Machine Language", "Hyperlink Markup Language"],
+      "answer": "HyperText Markup Language"
+    },
+    {
+      "id": 6,
+      "question": "Which of these is NOT a JavaScript framework/library?",
+      "options": ["React", "Angular", "Laravel", "Vue"],
+      "answer": "Laravel"
+    },
+    {
+      "id": 7,
+      "question": "Which HTML element do we put the JavaScript in?",
+      "options": ["<script>", "<js>", "<scripting>", "<javascript>"],
+      "answer": "<script>"
+    }
+  ]
+}
